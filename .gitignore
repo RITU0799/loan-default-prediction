@@ -1,0 +1,24 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment
+venv/
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+prediction_logs.csv
+
+# Optionally exclude raw data if you don't want to commit
+# data/lending_club_loan_two.csv
+# data/LoanDefault_UnderSampling.xlsx
+"notebooks/Python_Visualization.ipynb" 

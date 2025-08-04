@@ -1,0 +1,5 @@
+models/gbm_pipeline.pkl filter=lfs diff=lfs merge=lfs -text
+models/model_columns.pkl filter=lfs diff=lfs merge=lfs -text
+data/lending_club_loan_two.csv filter=lfs diff=lfs merge=lfs -text
+data/loan_data_cleaned.csv filter=lfs diff=lfs merge=lfs -text
+notebooks/Python_Visualization.ipynb filter=lfs diff=lfs merge=lfs -text
