@@ -1,11 +1,12 @@
-import streamlit as st
-import streamlit.components.v1 as components
+import os
+import requests
 import pandas as pd
 import numpy as np
 import plotly.express as px
 import joblib
 import base64
-import os
+import streamlit as st
+import streamlit.components.v1 as components
 from datetime import datetime
 
 # ---------- CONFIG & STYLING ----------
@@ -80,12 +81,26 @@ loan_income_svg = """<svg width="120" height="80" viewBox="0 0 120 80" xmlns="ht
 # ---------- LOAD DATA ----------
 @st.cache_data
 def load_data():
-    path = "C:/Users/RITUL/OneDrive/Desktop/loan-default-dashboard/data/loan_data_cleaned.csv"
+    path = "data/loan_data_cleaned.csv"
     if os.path.exists(path):
-        return pd.read_csv(path)
-    else:
-        st.warning("⚠️ loan_data_cleaned.csv not found in data/ directory.")
-        return pd.DataFrame()
+        try:
+            return pd.read_csv(path)
+        except Exception as e:
+            st.warning(f"Failed to read local CSV: {e}")
+    # fallback to downloading if environment variable provided
+    url = os.getenv("LOAN_DATA_URL")  # set this in Render env vars
+    if url:
+        try:
+            r = requests.get(url, timeout=10)
+            r.raise_for_status()
+            os.makedirs("data", exist_ok=True)
+            with open(path, "wb") as f:
+                f.write(r.content)
+            return pd.read_csv(path)
+        except Exception as e:
+            st.warning(f"Failed to download or read data from LOAN_DATA_URL: {e}")
+    st.warning("⚠️ loan_data_cleaned.csv not found in data/ directory.")
+    return pd.DataFrame()
 
 df = load_data()
 filtered_df = df.copy()
