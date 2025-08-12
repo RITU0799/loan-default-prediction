@@ -34,7 +34,7 @@ This project combines **Machine Learning**, **Streamlit**, and **Tableau** to de
 git clone https://github.com/RITU0799/loan-default-prediction.git
 cd loan-default-prediction
 
-2️⃣ Initialize Git & LFS (Large File Storage)
+### 2️⃣ Initialize Git & LFS (Large File Storage)
 ```bash
 git init
 git lfs install
@@ -42,11 +42,11 @@ git lfs track "models/gbm_pipeline.pkl" "models/model_columns.pkl"
 git lfs track "data/lending_club_loan_two.csv" "data/loan_data_cleaned.csv"
 git lfs track "notebooks/Python_Visualization.ipynb"
 
-3️⃣ Install Dependencies
+### 3️⃣ Install Dependencies
 ```bash
 pip install -r requirements.txt
 
-4️⃣ Run the Application
+### 4️⃣ Run the Application
 ```bash
 streamlit run app.py
 
@@ -54,7 +54,7 @@ App will be available at: http://localhost:8501
 
 ---
 
-📌 Future Enhancements
+## 📌 Future Enhancements
 
 1. Deploy on Render/Streamlit Cloud with persistent storage
 2. Integrate real-time credit bureau API
