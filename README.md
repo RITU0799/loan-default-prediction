@@ -34,7 +34,7 @@ This project combines **Machine Learning**, **Streamlit**, and **Tableau** to de
 git clone https://github.com/RITU0799/loan-default-prediction.git
 cd loan-default-prediction
 
-**### 2️⃣ Initialize Git & LFS (Large File Storage)**
+### 2️⃣ Initialize Git & LFS (Large File Storage)
 ```bash
 git init
 git lfs install
