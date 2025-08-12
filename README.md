@@ -46,12 +46,12 @@ App will be available at: http://localhost:8501
 
 ---
 
-## 📌 Future Enhancements
+## 📌 Future Enhancements  
 
-1. Deploy on Render/Streamlit Cloud with persistent storage
-2. Integrate real-time credit bureau API
-3. Add SHAP Explainability for model predictions
-4. Implement user authentication for secure data access
+- 🌐 **Deploy on Render/Streamlit Cloud** with persistent storage  
+- 🔍 **Integrate real-time credit bureau API** for live credit data  
+- 🧠 **Add SHAP Explainability** to interpret model predictions  
+- 🔒 **Implement user authentication** for secure data access  
 
 
 Author: Ritul Gaikwad
