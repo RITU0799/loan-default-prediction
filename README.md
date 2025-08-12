@@ -27,6 +27,15 @@ This project combines **Machine Learning**, **Streamlit**, and **Tableau** to de
 
 ---
 
+## 📌 Future Enhancements
+
+- 🌐 Deploy on Render/Streamlit Cloud with persistent storage  
+- 🔍 Integrate real-time credit bureau API for live credit data  
+- 🧠 Add SHAP Explainability to interpret model predictions  
+- 🔒 Implement user authentication for secure data access
+
+---
+
 ## 📦 Installation & Setup
 
 ```bash
@@ -43,15 +52,6 @@ pip install -r requirements.txt
 
 streamlit run app.py
 App will be available at: http://localhost:8501
-
----
-
-**##** 📌 Future Enhancements
-
-- 🌐 Deploy on Render/Streamlit Cloud with persistent storage  
-- 🔍 Integrate real-time credit bureau API for live credit data  
-- 🧠 Add SHAP Explainability to interpret model predictions  
-- 🔒 Implement user authentication for secure data access  
 
 ---
 
