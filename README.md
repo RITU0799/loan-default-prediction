@@ -53,6 +53,7 @@ App will be available at: http://localhost:8501
 - 🧠 **Add SHAP Explainability** to interpret model predictions  
 - 🔒 **Implement user authentication** for secure data access  
 
+---
 
 Author: Ritul Gaikwad
 LinkedIn: https://www.linkedin.com/in/ritul-gaikwad-9286b5182/
